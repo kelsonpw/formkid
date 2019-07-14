@@ -14,7 +14,7 @@ function usePageFormElements() {
           subject: 'DOMInfo',
         },
         response => {
-          setData(response.map(jsonElement => JSON.parse(jsonElement)));
+          setData(response);
         }
       );
     });
@@ -22,5 +22,15 @@ function usePageFormElements() {
 
   return data;
 }
+
+// 'id',
+// 'className',
+// 'tagName',
+// 'type',
+// 'name',
+// 'id',
+// 'value',
+
+// --------------
 
 export default usePageFormElements;
